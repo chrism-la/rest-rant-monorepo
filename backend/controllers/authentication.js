@@ -19,8 +19,6 @@ router.post('/', async (req, res) => {
         res.json({ user: user, token: result.value });
     }
 });
-
-___;
 router.get('/profile', async (req, res) => {
     try {
         const [authenticationMethod, token] = req.headers.authorization.split(' ');
