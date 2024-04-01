@@ -24,9 +24,7 @@ function CommentCard({ comment, onDelete }) {
                 </strong>
             </h3>
             <h4>Rating: {comment.stars}</h4>
-            <button className="btn btn-danger" onClick={onDelete}>
-                Delete Comment
-            </button>
+            {deleteButton}
         </div>
     );
 }
