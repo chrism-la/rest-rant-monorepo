@@ -33,7 +33,7 @@ function Navigation() {
     let addPlaceButton = null;
 
     if (currentUser?.role === 'admin') {
-        addPlaceBUtton = (
+        addPlaceButton = (
             <li>
                 <a href="#" onClick={() => history.push('/places/new')}>
                     Add Place
