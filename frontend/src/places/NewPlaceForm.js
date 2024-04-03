@@ -35,10 +35,6 @@ function NewPlaceForm() {
                     <input required value={place.name} onChange={(e) => setPlace({ ...place, name: e.target.value })} className="form-control" id="name" name="name" />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="founded">Year Founded</label>
-                    <input value={place.founded} onChange={(e) => setPlace({ ...place, founded: e.target.value })} className="form-control" id="founded" name="founded" />
-                </div>
-                <div className="form-group">
                     <label htmlFor="pic">Place Picture</label>
                     <input value={place.pic} onChange={(e) => setPlace({ ...place, pic: e.target.value })} className="form-control" id="pic" name="pic" />
                 </div>
