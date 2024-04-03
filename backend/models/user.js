@@ -16,11 +16,11 @@ module.exports = (sequelize, DataTypes) => {
             firstName: DataTypes.STRING,
             lastName: DataTypes.STRING,
             email: DataTypes.STRING,
+            passwordDigest: DataTypes.STRING,
             role: {
                 type: DataTypes.ENUM,
                 values: ['reviewer', 'admin'],
             },
-            passwordDigest: DataTypes.STRING,
         },
         {
             sequelize,
